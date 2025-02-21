@@ -1,0 +1,138 @@
+/* Header*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: #ee9a23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+}
+
+header nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 80px;
+}
+
+header .logo img{
+    height: 70px;
+    width: auto;
+    border-radius: 70%;
+}
+
+i{
+    color: aliceblue;
+    font-size: 22px;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #1d1d1b;
+    padding: 50px 30px 20px;
+    width: 100%;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+
+.nav{
+    margin: 30px 0;
+
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.nav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+}
+
+/* Home */
+
+/* Carrousel */
+
+.carrousel{
+    width: 900px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden ;
+}
+
+@keyframes slide{
+    0%{margin-left: 0%;}
+    30%{margin-left: 0%;}
+
+    35%{margin-left: -100%;}
+    65%{margin-left: -100%;}
+
+    70%{margin-left: -200%;}
+    100%{margin-left: -200%;}
+}
+
+
+.carrousel ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.carrousel ul li {
+    list-style: none;
+    width: 100%;
+}
+
+.carrousel img {
+    width: 100%;
+}
+
+/* Carrito */
+
+.info_carrito {
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+.titulo_carrito{
+    font-size: 400%;
+}
+
+
+.info_carrito .linea{
+    height: 10px;
+    width: 95%;
+    background-color: black;
+}
