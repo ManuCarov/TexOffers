@@ -1,3 +1,24 @@
+/* Grillas */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 3 columnas iguales */
+    gap: 7px; /* Espacio entre elementos */
+    padding: 20px;
+}
+
+.grid-item {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* padding */
+.contenido{
+    margin: 0; 
+    padding: 20px; 
+}
+
 /* Header*/
 
 *{
@@ -135,4 +156,73 @@ footer{
     height: 10px;
     width: 95%;
     background-color: black;
+}
+
+/* Profile */
+.profile-header {
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+/* Modificar la visualización de los elementos en venta del index */
+
+.card {
+    width: 250px; /* Reduce el tamaño de la tarjeta */
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    overflow: hidden; /* Evita que los bordes sobresalgan */
+    text-align: center;
+    padding: 10px;
+    background: #fff;
+}
+
+.card img {
+    width: 100%; /* Imagen responsiva */
+    height: 150px; /* Tamaño fijo para mantener uniformidad */
+    object-fit: cover; /* Recorta la imagen si es necesario */
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 10px;
+    font-size: 14px; /* Reduce el tamaño del texto */
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 13px;
+    color: #555;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
